@@ -2,37 +2,44 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* Home.css */
+.home-background {
+  background-image: url("https://assets.objkt.media/file/assets-003/QmbCqWghDpzUGLHSXgcUSiMwKpdw8t3h5FuyhoFnXpZ7zi/artifact");
+  background-size: cover;
+  background-position: auto;
+  height: 100vh;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.home-header {
+  padding-top: 4em;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.image-footer {
+  background-image: url("https://scontent-dfw5-2.xx.fbcdn.net/v/t39.30808-6/309254526_465843408917213_5859405606896937044_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=efb6e6&_nc_ohc=dgw1_bVlkWYAX_jqFk9&_nc_ht=scontent-dfw5-2.xx&oh=00_AfDFLTTtubjeC3Mp8JwRNcDeWXpXu1B90VSY5N0dlymG_Q&oe=65D943D6"); /* Path to your image */
+  background-repeat: no-repeat;
+  background-size: 80px 80px; /* Adjust based on the size you want */
+  background-position: center; /* Adjust the position as needed */
+  padding-top: 40px; /* Add some padding to make space for the background image */
+}
+/* NavBar.css */
+.navbar {
+  background-color: #333; /* Dark background */
+  overflow: hidden; /* Ensures the content is contained within the navigation bar */
+  position: fixed; /* Makes navbar stay at the top of the page */
+  top: 0;
+  width: 100%;
 }
 
-.App-link {
-  color: #61dafb;
+.navbar a {
+  float: left; /* Align links to the left side */
+  display: block; /* Change links from inline to block level for spacing */
+  color: white; /* Text color */
+  text-align: center; /* Center text */
+  padding: 14px 20px; /* Spacing around text */
+  text-decoration: none; /* Remove underline from links */
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.navbar a:hover {
+  background-color: #ddd; /* Light background on hover */
+  color: black; /* Text color change on hover */
 }
