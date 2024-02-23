@@ -3,7 +3,9 @@
 }
 
 body {
+  
   margin: 0;
+  padding-top: 0px;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
     "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
@@ -20,7 +22,8 @@ code {
   background-image: url("https://assets.objkt.media/file/assets-003/QmbCqWghDpzUGLHSXgcUSiMwKpdw8t3h5FuyhoFnXpZ7zi/artifact");
   background-size: cover;
   background-position: center;
-  height: 100vh;
+  max-width: 100%;
+  min-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -28,10 +31,16 @@ code {
 
 .home-header {
   font-family: "Rubik Glitch Pop", system-ui;
-  font-weight: 400;
+  font-weight: 500;
   font-style: normal;
-  font-size: 100px;
-  color: rgb(41, 3, 254);
+  font-size: min(
+    18vw,
+    150px
+  ); /* This prevents the font size from exceeding 100px */
+  color: rgb(138, 142, 138);
+  text-align: center; /* Explicitly center text */
+  width: 100%; /* Ensure the header spans the full width of its container */
+  margin: 0 auto; /* Center the header horizontally */
 }
 
 .welcome-div {
@@ -47,6 +56,11 @@ code {
   max-width: 600px; /* Adjust maximum width as needed */
 }
 
+.welcome-paragraph {
+  color: black;
+  font-size: x-large;
+}
+
 .image-footer {
   margin-top: 20px;
   background-image: url("https://i.imgur.com/HJOQK13.png");
@@ -55,25 +69,4 @@ code {
   background-position: center;
   height: 300px; /* Adjust height as needed */
   width: 100%; /* Ensure the footer stretches across the card */
-}
-.navbar {
-  background-color: #333; /* Dark background */
-  overflow: hidden; /* Ensures the content is contained within the navigation bar */
-  position: sticky; /* Makes navbar stay at the top of the page */
-
-  width: 100%;
-}
-
-.navbar a {
-  float: left; /* Align links to the left side */
-  display: block; /* Change links from inline to block level for spacing */
-  color: white; /* Text color */
-  text-align: center; /* Center text */
-  padding: 14px 20px; /* Spacing around text */
-  text-decoration: none; /* Remove underline from links */
-}
-
-.navbar a:hover {
-  background-color: #ddd; /* Light background on hover */
-  color: black; /* Text color change on hover */
 }

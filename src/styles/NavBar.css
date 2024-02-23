@@ -1,0 +1,37 @@
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: #333; /* Example background color */
+  color: white; /* Example text color */
+  padding: 10px 0;
+  z-index: 1000; /* Ensure the navbar is above other content */
+  display: flex;
+  justify-content: center; /* Center the links */
+  gap: 20px; /* Add some space between links */
+}
+
+.navbar a {
+  color: white; /* Example link color */
+  text-decoration: none; /* Removes underline from links */
+  padding: 0 15px; /* Example padding */
+}
+
+.navbar a:hover {
+  text-decoration: underline; /* Example hover effect */
+}
+
+@media (max-width: 768px) {
+  .about-container {
+    padding: 10px;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+}
+
+.navbar a:hover {
+  background-color: #ddd; /* Light background on hover */
+  color: black; /* Text color change on hover */
+}

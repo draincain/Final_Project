@@ -1,0 +1,135 @@
+/* About.css */
+
+body {
+  background-color: black; /* Confirm this is applied globally or set it specifically for the About page */
+  color: white; /* Contrast text color */
+  font-family: "Roboto", sans-serif; /* Example font */
+}
+.about-container {
+  max-width: 800px;
+  margin: auto;
+  padding: 20px;
+}
+
+.about-header {
+  font-family: "Rubik Glitch Pop";
+  text-align: center;
+  color: rgb(138, 142, 138);
+  font-size: 5rem;
+  margin-bottom: 20px;
+}
+
+.about-paragraph {
+  position: relative; /* Needed for absolute positioning of pseudo-elements */
+  line-height: 3;
+  margin-bottom: 20px;
+  font-size: larger;
+  font-weight: 700;
+  padding: 20px; /* Add padding to create space for the pseudo-element border */
+  /* Other styles remain unchanged */
+}
+
+.about-paragraph::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border: 8px solid transparent; /* Initial border set to transparent */
+  animation: glitchBorder 5s infinite linear;
+}
+
+@keyframes glitchBorder {
+  0%,
+  100% {
+    border-color: transparent;
+    transform: translate(0, 0);
+    clip-path: inset(10% 0 10% 0);
+  }
+  5%,
+  15% {
+    border-color: #0f0; /* Glitchy green */
+    clip-path: inset(0 15% 45% 0);
+    transform: translate(-5px, 5px);
+  }
+  10%,
+  13%,
+  25%,
+  50% {
+    border-color: #f00; /* Glitchy red */
+    clip-path: inset(30% 0 25% 5%);
+    transform: translate(5px, -5px);
+  }
+  20%,
+  23%,
+  30%,
+  33% {
+    border-color: #00f; /* Glitchy blue */
+    clip-path: inset(0 40% 0 5%);
+    transform: translate(-5px, 0);
+  }
+  27%,
+  40%,
+  43%,
+  60% {
+    border-color: #ff0; /* Glitchy yellow */
+    clip-path: inset(20% 20% 20% 20%);
+    transform: translate(0, 5px);
+  }
+  70%,
+  75% {
+    border-color: #0ff; /* Glitchy cyan */
+    clip-path: inset(10% 5% 30% 10%);
+    transform: translate(5px, 5px);
+  }
+  80%,
+  85% {
+    border-color: #f0f; /* Glitchy magenta */
+    clip-path: inset(5% 30% 5% 30%);
+    transform: translate(-5px, -5px);
+  }
+  90% {
+    border-color: #fff; /* White */
+    clip-path: inset(0 50% 0 30%);
+    transform: translate(5px, 0);
+  }
+}
+
+/* Glitch effect for headers */
+@keyframes glitch {
+  10% {
+    text-shadow: 2px 0 #0f0, -2px 0 #f00;
+  }
+  20% {
+    text-shadow: -2px 0 #0f0, 2px 0 #f00;
+  }
+  40% {
+    text-shadow: 2px 0 rgb(122, 207, 113), -2px -2px #f00;
+  }
+  60% {
+    text-shadow: -2px -2px #0f0, 2px 2px rgb(25, 0, 255);
+  }
+  80% {
+    text-shadow: 2px 2px #0f0, -2px -2px #f00;
+  }
+  100% {
+    text-shadow: -2px -2px rgb(235, 181, 32), 2px 2px rgb(0, 119, 255);
+  }
+  80% {
+    text-shadow: 2px 2px #0f0, -2px -2px #f00;
+  }
+  60% {
+    text-shadow: -2px -2px #0f0, 2px 2px rgb(25, 0, 255);
+  }
+  40% {
+    text-shadow: 2px 0 rgb(122, 207, 113), -2px -2px #f00;
+  }
+  20% {
+    text-shadow: -2px 0 #0f0, 2px 0 rgb(0, 102, 255);
+  }
+}
+
+h1 {
+  animation: glitch 3s linear infinite;
+}

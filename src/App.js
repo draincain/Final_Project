@@ -1,5 +1,5 @@
 import React from "react";
-import "./App.css";
+import "./styles/App.css";
 import AppRouter from "./AppRouter.js"; // Adjust the path as necessary
 import NavBar from "./components/NavBar.js";
 import "../node_modules/bootstrap/dist/css/bootstrap.css";

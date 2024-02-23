@@ -1,0 +1,62 @@
+/* Gallery.css */
+
+.masonry-grid {
+  display: flex;
+  margin-left: -30px; /* Adjust gutter size */
+  width: auto;
+}
+.masonry-grid_column {
+  padding-left: 30px; /* Gutter size */
+  background-clip: padding-box;
+}
+
+.collection-container {
+  background-color: rgb(154, 154, 155);
+  background-size: cover; /* Cover ensures the image covers the whole area */
+  background-position: center; /* Centers the background image */
+  background-repeat: no-repeat; /* Prevents image from repeating */
+  min-height: 100vh; /* Ensures minimum height is full viewport height */
+}
+
+.collection-item {
+  display: flex;
+  flex-direction: column; /* Stack image and title vertically */
+  align-items: center; /* Center items horizontally within each .collection-item */
+  text-align: center; /* Ensure text is centered */
+}
+
+.collection-item a {
+  text-decoration: none; /* This will remove the underline from the links */
+}
+.collection-item a:hover,
+.collection-item a:focus {
+  text-decoration: underline; /* Only show underline on hover/focus for better UX */
+  color: #2007ff; /* Adjust hover color as needed */
+}
+
+.collection-image {
+  width: 200px; /* Adjust as necessary */
+  height: auto; /* Maintain aspect ratio */
+  margin-bottom: 10px; /* Space between image and title */
+}
+
+.collection-title {
+  color: rgb(
+    255,
+    255,
+    8
+  ); /* This makes the text color match its parent, removing the blue color */
+  text-decoration: inherit; /* Removes underline */
+  font-weight: bold; /* Example: make the title bold */
+  /* Any additional styling you want */
+}
+
+.centered-heading {
+  font-family: "Rubik Glitch Pop", system-ui;
+  text-align: center;
+  width: 100%;
+  margin-bottom: 20px; /* Space below the heading */
+  font-weight: 500;
+  font-style: normal;
+  font-size: min(18vw, 100px);
+}

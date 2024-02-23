@@ -1,12 +1,12 @@
 import React from "react";
-import "../App.css";
+import "../styles/App.css";
 
 const Home = () => {
   return (
     <div className="home-background">
       <div className="welcome-div">
-        <h1 className="home-header">Drain Digital Art</h1>
-        <p>
+        <h1 className="home-header">Drain</h1>
+        <p className="welcome-paragraph">
           This is the home of my digital art portfolio. Explore the gallery,
           check out the store, or get in touch!
         </p>

@@ -1,0 +1,107 @@
+/* Links.css */
+body,
+html {
+  height: 100%;
+  margin: 0;
+}
+
+.links-background {
+  background-image: url("https://assets.objkt.media/file/assets-003/QmThTT8cAaWvHnUrbj55okYMAUsA5wMVdb1jLid9jRvRPj/artifact");
+  background-size: cover;
+  background-position: center;
+  padding: 60px 20px 20px; /* Add top padding to avoid overlap with navbar, adjust as needed */
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center content */
+}
+
+.links-container {
+  display: flex;
+  flex-direction: row; /* Start with horizontal layout */
+  flex-wrap: wrap; /* Allow wrapping for responsiveness */
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 20px; /* Space between main links and social links */
+}
+
+.link-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: calc(50% - 40px); /* Adjust width for responsiveness */
+  text-decoration: none;
+  color: black;
+  background: rgba(255, 255, 255, 0.75);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border-radius: 10px;
+  overflow: hidden;
+  transition: all 0.3s ease; /* Smooth transition for hover effects */
+}
+
+.thumbnail {
+  width: 100%;
+  height: 0;
+  padding-top: 100%; /* Maintain aspect ratio */
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-bottom: 10px;
+}
+
+.text-content {
+  padding: 10px;
+  text-align: center;
+  width: 100%; /* Full width of parent */
+}
+
+/* Adjustments for smaller screens */
+@media (max-width: 768px) {
+  .links-container {
+    flex-direction: column; /* Stack vertically on smaller screens */
+  }
+
+  .link-item {
+    width: 80%; /* Larger width for smaller screens */
+  }
+}
+
+/* Social links styling */
+.social-links-container {
+  display: flex;
+  flex-wrap: wrap; /* Allow wrapping for multiple social links */
+  justify-content: center;
+  gap: 10px;
+  width: 100%;
+}
+
+.social-link-item {
+  display: flex;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 10px;
+  padding: 10px;
+  text-decoration: none;
+  color: black;
+}
+
+.social-thumbnail {
+  margin-right: 10px;
+  width: 30px; /* Adjust based on your preference */
+  height: 30px;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  gap: 10px;
+  justify-content: center; /* Center social links */
+}
+
+li {
+  display: flex;
+}
