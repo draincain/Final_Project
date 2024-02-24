@@ -2,23 +2,23 @@
   position: fixed;
   top: 0;
   width: 100%;
-  background: #333; /* Example background color */
-  color: white; /* Example text color */
+  background: #333;
+  color: white;
   padding: 10px 0;
-  z-index: 1000; /* Ensure the navbar is above other content */
+  z-index: 1000;
   display: flex;
-  justify-content: center; /* Center the links */
-  gap: 20px; /* Add some space between links */
+  justify-content: center;
+  gap: 20px;
 }
 
 .navbar a {
-  color: white; /* Example link color */
-  text-decoration: none; /* Removes underline from links */
-  padding: 0 15px; /* Example padding */
+  color: white;
+  text-decoration: none;
+  padding: 0 15px;
 }
 
 .navbar a:hover {
-  text-decoration: underline; /* Example hover effect */
+  text-decoration: underline;
 }
 
 @media (max-width: 768px) {
@@ -32,6 +32,15 @@
 }
 
 .navbar a:hover {
-  background-color: #ddd; /* Light background on hover */
-  color: black; /* Text color change on hover */
+  background-color: #ddd;
+  color: black;
+}
+
+.navbar a.admin-link {
+  opacity: 0; /* Make the link invisible by default */
+  transition: opacity 0.5s ease; /* Smooth transition for the opacity change */
+}
+
+.navbar a.admin-link:hover {
+  opacity: 1; /* Make the link visible on hover */
 }

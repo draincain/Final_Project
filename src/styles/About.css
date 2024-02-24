@@ -1,9 +1,7 @@
-/* About.css */
-
 body {
-  background-color: black; /* Confirm this is applied globally or set it specifically for the About page */
-  color: white; /* Contrast text color */
-  font-family: "Roboto", sans-serif; /* Example font */
+  background-color: black;
+  color: white;
+  font-family: "Roboto", sans-serif;
 }
 .about-container {
   max-width: 800px;
@@ -20,13 +18,12 @@ body {
 }
 
 .about-paragraph {
-  position: relative; /* Needed for absolute positioning of pseudo-elements */
-  line-height: 3;
+  position: relative;
+  line-height: 2.5;
   margin-bottom: 20px;
   font-size: larger;
   font-weight: 700;
-  padding: 20px; /* Add padding to create space for the pseudo-element border */
-  /* Other styles remain unchanged */
+  padding: 20px;
 }
 
 .about-paragraph::before {

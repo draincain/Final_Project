@@ -8,6 +8,7 @@ const Gallery = () => {
   const [collections, setCollections] = useState([]);
 
   useEffect(() => {
+    // Fetches data on component mount.
     const fetchData = async () => {
       const apiUrl = "https://65a6ae9974cf4207b4f0a100.mockapi.io/collections";
       try {
@@ -22,7 +23,7 @@ const Gallery = () => {
     fetchData();
   }, []);
 
-  // Breakpoint columns configuration
+  // Configuration for responsive column count based on the viewport width.
   const breakpointColumnsObj = {
     default: 4, // Default number of columns
     1100: 3, // 3 columns when the viewport is 1100px or greater
@@ -30,6 +31,7 @@ const Gallery = () => {
     500: 1, // 1 column when the viewport is 500px or greater
   };
 
+  // Render the gallery.
   return (
     <div className="collection-container">
       <h1 className="centered-heading">Collections</h1>

@@ -1,5 +1,6 @@
 import React, { useEffect } from "react";
 import "../styles/About.css";
+import profileImage from "../images/About/Cain02x.jpg";
 
 const About = () => {
   useEffect(() => {
@@ -16,7 +17,7 @@ const About = () => {
     <div className="about-container">
       <h1 className="about-header">Circling the Drain</h1>
       <p className="about-paragraph">
-        Adrian Cain (Drain) is a glitch artist, residing currently in Northwest
+        Adrian Cain (Drain) is a glitch artist, residing in Northwest
         Arkansas. Practicing since 2015, he first became aware of glitch as a
         form of art through the FB group, Glitch Request and GAC. He first
         started glitching selfies with wordpad in 2015. Now he focuses on
@@ -26,6 +27,7 @@ const About = () => {
         Databending any image format he can get his hands on, Drain creates
         glitch collages to highlight various techniques.
       </p>
+      <img src={profileImage} alt="Profile" />
     </div>
   );
 };

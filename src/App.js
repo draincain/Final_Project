@@ -1,15 +1,16 @@
 import React from "react";
+import { AuthProvider } from "./components/AuthContext.js";
+import NavBar from "./components/NavBar.js"; 
 import "./styles/App.css";
-import AppRouter from "./AppRouter.js"; // Adjust the path as necessary
-import NavBar from "./components/NavBar.js";
+import AppRouter from "./AppRouter.js"; 
 import "../node_modules/bootstrap/dist/css/bootstrap.css";
 
 function App() {
   return (
-    <div className="App">
-      <NavBar />
+    <AuthProvider>
+      <NavBar /> 
       <AppRouter />
-    </div>
+    </AuthProvider>
   );
 }
 
